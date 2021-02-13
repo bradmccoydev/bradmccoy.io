@@ -1,7 +1,9 @@
 import GithubCards from "./GitHubCards";
+import Slider from "./Slider";
 
 function App() {
-  return <GithubCards />;
+  return <Slider />;
+  //return <GithubCards />;
 }
 
 export default App;
