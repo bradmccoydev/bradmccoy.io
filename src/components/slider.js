@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { NavMenu } from './../components/NavMenu';
 import PostCard from "./PostCard";
 import axios from "axios";
 
@@ -41,11 +42,14 @@ class Slider extends React.Component {
     const { itemRows } = this.state;
 
     return (
-      <Grid container spacing={1}>
-        {itemRows.map((row, id) =>
-          row.map((item, key) => <PostCard {...item} key={key} />)
-        )}
-      </Grid>
+        <div>
+            <NavMenu/> 
+            <Grid container spacing={1}>
+                {itemRows.map((row, id) =>
+                row.map((item, key) => <PostCard {...item} key={key} />)
+                )}
+            </Grid>
+      </div>
     );
   }
 }
