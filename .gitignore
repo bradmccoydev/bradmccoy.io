@@ -1,6 +1,9 @@
-#terraform
+# Terraform
 /.terraform/*
 *.terraform/
+
+# Env with Secrets
+.env
 
 # dependencies
 /node_modules
